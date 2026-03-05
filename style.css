@@ -457,7 +457,11 @@ img {
 .hero-img-bg::before {
   content: "";
   position: absolute;
-  inset: 20px;
+  top: 50%;
+  left: 50%;
+  width: calc(100% - 40px);
+  height: calc(100% - 40px);
+  transform: translate(-50%, -50%);
   border-radius: 50%;
   border: 2px solid rgba(255, 255, 255, 0.1);
 }
@@ -1073,7 +1077,9 @@ img {
   justify-content: center;
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.25s ease, visibility 0.25s ease;
+  transition:
+    opacity 0.25s ease,
+    visibility 0.25s ease;
   padding: 2rem;
 }
 
@@ -1655,7 +1661,27 @@ img {
   }
 
   .hero-image {
-    display: none;
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero-img-wrapper {
+    height: 360px;
+  }
+
+  .hero-img-bg {
+    width: 280px;
+    height: 280px;
+  }
+
+  .doctor-photo-circle {
+    width: 240px;
+    height: 240px;
+  }
+
+  .doctor-card {
+    max-width: 260px;
+    padding: 0.85rem 1rem;
   }
 
   .hero-buttons {
@@ -1795,7 +1821,58 @@ img {
   }
 
   .hero-image {
-    display: none;
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero-img-wrapper {
+    height: 320px;
+  }
+
+  .hero-img-bg {
+    width: 250px;
+    height: 250px;
+  }
+
+  .doctor-photo-circle {
+    width: 210px;
+    height: 210px;
+  }
+
+  .doctor-card {
+    max-width: 300px;
+    padding: 0.75rem 0.9rem;
+  }
+
+  .hero-features {
+    display: block;
+  }
+
+  .feature-badge {
+    padding: 0.55rem 0.75rem;
+    font-size: 0.72rem;
+    gap: 0.35rem;
+  }
+
+  .feature-badge i {
+    font-size: 0.9rem;
+  }
+
+  .badge-top {
+    top: -22px;
+    right: -6px;
+  }
+
+  .badge-bottom {
+    bottom: 80px;
+    left: -56px;
+  }
+
+  .hero-tooth-icon {
+    display: block;
+    top: -30px;
+    left: 10px;
+    font-size: 2.3rem;
   }
 
   .hero-buttons {
@@ -2009,6 +2086,27 @@ img {
     flex-direction: column;
     align-items: center;
     gap: 0.8rem;
+  }
+
+  .feature-badge {
+    padding: 0.5rem 0.65rem;
+    font-size: 0.68rem;
+  }
+
+  .badge-top {
+    top: -18px;
+    right: -3px;
+  }
+
+  .badge-bottom {
+    bottom: 94px;
+    left: -38px;
+  }
+
+  .hero-tooth-icon {
+    top: -24px;
+    left: 8px;
+    font-size: 2rem;
   }
 
   .hero-buttons .btn {
