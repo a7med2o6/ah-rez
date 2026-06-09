@@ -521,7 +521,7 @@ img {
   gap: 1rem;
   box-shadow: var(--shadow-lg);
   width: 100%;
-  max-width: 310px;
+  max-width: 320px;
 }
 
 .doctor-info {

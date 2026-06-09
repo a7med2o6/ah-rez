@@ -1,1 +1,1 @@
-# ah-rez
+https://aredental.com/
