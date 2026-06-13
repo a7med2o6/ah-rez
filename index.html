@@ -642,7 +642,7 @@
 
                             <div class="form-group">
                                 <label for="service">الخدمة المطلوبة</label>
-                                <select id="service" name="service">
+                                <select id="service" name="service" required>
                                     <option value="">اختر الخدمة</option>
                                     <option>تبييض الأسنان</option>
                                     <option>تركيبات الأسنان</option>
@@ -654,9 +654,32 @@
                                 </select>
                             </div>
 
-                            <div class="form-group">
-                                <label for="date">تاريخ الموعد المفضل</label>
-                                <input type="date" id="date" name="date">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="date">تاريخ الموعد المفضل</label>
+                                    <input type="date" id="date" name="date" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="time">الوقت المفضل</label>
+                                    <select id="time" name="time" required>
+                                        <option value="">اختر الوقت</option>
+                                        <option value="02:00 م">02:00 م</option>
+                                        <option value="02:30 م">02:30 م</option>
+                                        <option value="03:00 م">03:00 م</option>
+                                        <option value="03:30 م">03:30 م</option>
+                                        <option value="04:00 م">04:00 م</option>
+                                        <option value="04:30 م">04:30 م</option>
+                                        <option value="05:00 م">05:00 م</option>
+                                        <option value="05:30 م">05:30 م</option>
+                                        <option value="06:00 م">06:00 م</option>
+                                        <option value="06:30 م">06:30 م</option>
+                                        <option value="07:00 م">07:00 م</option>
+                                        <option value="07:30 م">07:30 م</option>
+                                        <option value="08:00 م">08:00 م</option>
+                                        <option value="08:30 م">08:30 م</option>
+                                        <option value="09:00 م">09:00 م</option>
+                                    </select>
+                                </div>
                             </div>
 
                             <div class="form-group">
@@ -672,6 +695,7 @@
 
                             <p class="form-note"><i class="fa-solid fa-lock"></i> بياناتك محمية وسرية تماماً</p>
                         </form>
+
                         <div class="form-success" id="form-success" style="display:none;">
                             <div class="success-icon"><i class="fa-solid fa-circle-check"></i></div>
                             <h3>تم استلام طلبك بنجاح!</h3>
@@ -779,6 +803,7 @@
                 phone: document.getElementById('phone').value.trim(),
                 service: document.getElementById('service').value,
                 date: document.getElementById('date').value,
+                time: document.getElementById('time').value,
                 notes: document.getElementById('message').value.trim() || "لا يوجد"
             };
 

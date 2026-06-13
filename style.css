@@ -1974,7 +1974,7 @@ img {
   }
 
   .step-arrow {
-    transform: rotate(90deg);
+    transform: rotate(-90deg);
     align-self: center;
   }
 
@@ -2016,6 +2016,27 @@ img {
   .footer-grid {
     grid-template-columns: 1fr;
     gap: 2rem;
+    justify-items: center;
+    text-align: center;
+  }
+
+  .footer-brand,
+  .footer-links,
+  .footer-contact {
+    width: 100%;
+    max-width: 340px;
+  }
+
+  .footer-brand .logo,
+  .social-links,
+  .footer-links ul,
+  .footer-contact-item,
+  .whatsapp-btn {
+    justify-content: center;
+  }
+
+  .footer-contact-item {
+    text-align: center;
   }
 
   .footer-top {
